@@ -57,6 +57,10 @@ This estimator is a single static file so it loads instantly, runs locally, and 
 
 No build. Open `index.html` in a browser, or deploy via GitHub Pages.
 
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
 ## License
 
 MIT.
