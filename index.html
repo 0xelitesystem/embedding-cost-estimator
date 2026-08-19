@@ -66,8 +66,8 @@ th, td { padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--ru
 th { background: var(--rule-soft); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); }
 td.num { font-family: ui-monospace, 'SF Mono', Consolas, monospace; text-align: right; }
 tr.cheapest { background: color-mix(in srgb, var(--ok) 8%, transparent); }
-tr.cheapest td:first-child::after { content: " · cheapest"; color: var(--ok); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
-tr.priciest td:first-child::after { content: " · priciest"; color: var(--accent); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+tr.cheapest td:first-child::after { content: " &middot; cheapest"; color: var(--ok); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+tr.priciest td:first-child::after { content: " &middot; priciest"; color: var(--accent); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 .provider { font-weight: 600; }
 .dim { color: var(--ink-soft); font-size: 12px; }
 .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 16px; }
@@ -134,7 +134,7 @@ footer a { color: var(--accent); }
         <table id="cost-table">
           <thead>
             <tr>
-              <th>Provider · Model</th>
+              <th>Provider &middot; Model</th>
               <th>Dimensions</th>
               <th class="num">Per 1M tokens</th>
               <th class="num">Backfill cost</th>
@@ -148,7 +148,7 @@ footer a { color: var(--accent); }
     </section>
 
     <div class="note">
-      <strong>How pricing is calculated.</strong> Provider rates as of model launch documentation. Self-hosted models (BGE, Nomic local) show $0 token cost but you pay for GPU compute; estimate separately. Total = backfill (corpus tokens × frequency) + queries (query tokens × 12 months).
+      <strong>How pricing is calculated.</strong> Provider rates as of model launch documentation. Self-hosted models (BGE, Nomic local) show $0 token cost but you pay for GPU compute; estimate separately. Total = backfill (corpus tokens &times; frequency) + queries (query tokens &times; 12 months).
     </div>
 
     <section style="margin-top: 40px;">
@@ -251,7 +251,7 @@ function recalc() {
     </div>
     <div class="summary-card">
       <div class="summary-label">Spread</div>
-      <div class="summary-value">${ratio}×</div>
+      <div class="summary-value">${ratio}&times;</div>
     </div>
   `;
 }
