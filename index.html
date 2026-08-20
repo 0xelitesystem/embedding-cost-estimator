@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,6 +81,35 @@ footer a { color: var(--accent); }
 </style>
 <link rel="canonical" href="https://0xelitesystem.github.io/embedding-cost-estimator/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Embedding Cost Estimator","applicationCategory":"DeveloperApplication","operatingSystem":"Any (browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://0xelitesystem.github.io/embedding-cost-estimator/","author":{"@type":"Person","name":"0xelitesystem","url":"https://elitesystem.ai"}}</script>
+<style>
+/* elitesystem brand tokens: chrome only, meaning preserved */
+:root, :root[data-theme="dark"] {
+  --accent: #d4ff3a;
+  --accent-soft: rgba(212,255,58,0.12);
+  --bg: #0a0a0a;
+  --ink: #e8e8e3;
+  --ink-soft: #a8a8a3;
+  --ok: #7ddc7d;
+  --panel: #111110;
+  --rule: #1f1f1d;
+  --rule-soft: #1f1f1d;
+  --warn: #ffb454;
+}
+:root[data-theme="light"] {
+  --accent: #2d6b00;
+  --accent-soft: rgba(45,107,0,0.08);
+  --bg: #e8ebef;
+  --ink: #0a0a0a;
+  --ink-soft: #2a2a27;
+  --ok: #1a5c2e;
+  --panel: #dee2e8;
+  --rule: #c8cdd5;
+  --rule-soft: #c8cdd5;
+  --warn: #a05a00;
+}
+:root { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+</style>
 </head>
 <body>
 <a href="#main" style="position:absolute;left:-9999px" onfocus="this.style.left='8px';this.style.top='8px';this.style.zIndex='100'">Skip to content</a>
